@@ -1,6 +1,3 @@
 import alumno
+import nota
 
-def crear_alumno():
-    nombre = input("Nombre: ")
-    nota = int(input("Nota: "))
-    return alumno.AlumnoNota(nombre, nota)
