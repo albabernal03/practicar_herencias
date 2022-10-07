@@ -1,13 +1,10 @@
-from Ejercicio_5 import coche
+import vehiculo
 
-class Coche:
-    
+class Coche(vehiculo.Vehiculo):
     def __init__(self, color, ruedas, velocidad, cilindrada):
-        self.color = color
-        self.ruedas = ruedas
+        super().__init__(color, ruedas) #el super() llama al constructor de la clase madre
         self.velocidad = velocidad
         self.cilindrada = cilindrada
     def __str__(self):
-        return "color {}, {} ruedas, {} km/h, {} cc".format(self.color, self.ruedas, self.velocidad, self.cilindrada)
-
+        return super().__str__() + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
 
