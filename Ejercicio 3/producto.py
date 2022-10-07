@@ -19,4 +19,9 @@ print(a)
 print('El producto se ha creado con exito')
 
 class Alimento(Producto):
-    
+    productor=''
+    distribuidor=''
+
+al= Alimento(201, 'Botella de Aceite', 5, 'Alimento')
+al.productor='Los Oliveros'
+al.distribuidor= 'aceite SL'
