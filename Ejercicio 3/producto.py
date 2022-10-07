@@ -16,7 +16,7 @@ class Adorno(Producto): #hereda de producto y va a tener todos sus atributos igu
     pass
 
 a= Adorno(200, 'Jarron', 100, 'Adorno')
-print(a)
+
 
 
 class Alimento(Producto):
@@ -26,6 +26,15 @@ class Alimento(Producto):
 al= Alimento(201, 'Botella de Aceite', 5, 'Alimento')
 al.productor='Los Oliveros'
 al.distribuidor= 'aceite SL'
-print(al)
+
 
 productos= [a, al]
+for p in productos:
+    print(p,'\n')
+
+def rebajar_producto(p, rebaja):
+    '''Devuelve el producto con la rebaja aplicada'''
+    p.precio= p.precio -(p.precio/100 * rebaja)
+aplica_rebaja= rebajar_producto(al, 10)
+print(aplica_rebaja)
+print(al)
