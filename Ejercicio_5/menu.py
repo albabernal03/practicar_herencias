@@ -19,9 +19,9 @@ def iniciar():
         print('3. Salir')
         opcion = input('Elige una opcion: ')
         if opcion == '1':
-            catalogar(vehiculo)
+            catalogar()
         elif opcion == '2':
-            catalogar2(vehiculo)
+            catalogar2()
         elif opcion == '3':
             break
         else:
