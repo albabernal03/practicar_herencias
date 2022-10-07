@@ -4,4 +4,9 @@ class Producto:
         self.nombre = nombre
         self.precio = precio
         self.tipo = tipo
-        
+    def __str__(self):
+        return'''\
+            CODIGO\t{}
+            NOMBRE\t{}
+            PRECIO\t{}
+            TIPO\t{}'''.format(self.codigo, self.nombre, self.precio, self.tipo)
