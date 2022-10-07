@@ -1,4 +1,4 @@
-#crea una funcion que capture error de dividir entre cero
+
 
 def dividir():
     try:
@@ -15,4 +15,3 @@ def dividir():
     except:
         print("Error desconocido")
         dividir()
-        
