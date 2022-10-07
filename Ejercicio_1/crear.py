@@ -2,7 +2,7 @@ import alumno
 import nota
 
 
-class AlumnoNota(Alumno, Nota):
+class AlumnoNota(alumno.Alumno, nota.Nota):
     def __init__(self, nombre, nota):
         alumno.Alumno.__init__(self, nombre)
         nota.Nota.__init__(self, nota)
