@@ -10,3 +10,8 @@ class Producto:
             NOMBRE\t{}
             PRECIO\t{}
             TIPO\t{}'''.format(self.codigo, self.nombre, self.precio, self.tipo)
+
+class Adorno(Producto): #hereda de producto y va a tener todos sus atributos iguales
+    pass
+
+
