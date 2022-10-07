@@ -14,4 +14,9 @@ class Producto:
 class Adorno(Producto): #hereda de producto y va a tener todos sus atributos iguales
     pass
 
+a= Adorno(200, 'Jarron', 100, 'Adorno')
+print(a)
+print('El producto se ha creado con exito')
 
+class Alimento(Producto):
+    
