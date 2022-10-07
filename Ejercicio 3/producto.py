@@ -4,6 +4,7 @@ class Producto:
         self.nombre = nombre
         self.precio = precio
         self.tipo = tipo
+    print('El producto se ha creado con exito')
     def __str__(self):
         return'''\
             CODIGO\t{}
@@ -16,7 +17,7 @@ class Adorno(Producto): #hereda de producto y va a tener todos sus atributos igu
 
 a= Adorno(200, 'Jarron', 100, 'Adorno')
 print(a)
-print('El producto se ha creado con exito')
+
 
 class Alimento(Producto):
     productor=''
@@ -25,3 +26,6 @@ class Alimento(Producto):
 al= Alimento(201, 'Botella de Aceite', 5, 'Alimento')
 al.productor='Los Oliveros'
 al.distribuidor= 'aceite SL'
+print(al)
+
+productos= [a, al]
